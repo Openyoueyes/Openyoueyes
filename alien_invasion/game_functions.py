@@ -220,11 +220,11 @@ def check_high_score(stats, sb):
         save_hight_score(stats)
 
 def save_hight_score(stats):
-    filename = 'alien_record.json'
+    filename = '/Users/ilaglotov/Documents/GitHub/Openyoueyes/alien_invasion/alien_record.json'
     with open(filename, 'w') as f_obj:
         json.dump(stats.high_score, f_obj)
 
 def load_hight_score(stats):
-    filename = 'alien_record.json'
+    filename = '/Users/ilaglotov/Documents/GitHub/Openyoueyes/alien_invasion/alien_record.json'
     with open(filename) as f_obj:
         stats.high_score = json.load(f_obj)

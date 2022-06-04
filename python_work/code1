@@ -1,0 +1,2 @@
+ef multiply(a, b):
+    a * b
